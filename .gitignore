@@ -1,0 +1,9 @@
+/scala/*/.exercism
+/scala/*/.metals
+/scala/*/.vscode
+/scala/*/.bloop
+/scala/*/project
+/scala/*/target
+/scala/*/.scalafmt.conf
+.vscode
+.metals
