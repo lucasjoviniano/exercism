@@ -5,5 +5,9 @@
 /scala/*/project
 /scala/*/target
 /scala/*/.scalafmt.conf
+/cpp/*/.exercism
+/cpp/*/.idea
+/cpp/*/.exercism
+/cpp/*/cmake-build-debug
 .vscode
 .metals
