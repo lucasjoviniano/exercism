@@ -11,3 +11,5 @@
 /cpp/*/cmake-build-debug
 .vscode
 .metals
+.fake
+.ionide
