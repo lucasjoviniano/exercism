@@ -7,8 +7,11 @@
 /scala/*/.scalafmt.conf
 /cpp/*/.exercism
 /cpp/*/.idea
-/cpp/*/.exercism
 /cpp/*/cmake-build-debug
+/elm/*/elm-stuff
+/elm/*/.exercism
+/clojure/*/.exercism
+/elixir/*/.exercism
 .vscode
 .metals
 .fake
