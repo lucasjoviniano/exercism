@@ -10,7 +10,10 @@
 /cpp/*/cmake-build-debug
 /elm/*/elm-stuff
 /elm/*/.exercism
+/elm/*/review
 /clojure/*/.exercism
+/clojure/*/.lsp
+/clojure/*/.target/*
 /elixir/*/.exercism
 .vscode
 .metals
