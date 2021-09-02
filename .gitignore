@@ -15,6 +15,14 @@
 /clojure/*/.lsp
 /clojure/*/.target/*
 /elixir/*/.exercism
+/java/*/.gradle
+/java/*/build
+/java/*/.exercism
+/java/*/.idea
+/fsharp/*/.exercism
+/fsharp/*/obj
+/ruby/*/.exercism
+/ruby/*/.idea
 .vscode
 .metals
 .fake
