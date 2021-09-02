@@ -5,7 +5,7 @@
 
 (defn question? [s] (str/ends-with? s "?"))
 
-(defn response-for [s] (binding [message (str/trim s)] (cond
+(defn response-for [s] (let [message (str/trim s)] (cond
                                                          (and (yelling? message) (question? message)) "Calm down, I know what I'm doing!"
                                                          (yelling? message) "Whoa, chill out!"
                                                          (question? message) "Sure."

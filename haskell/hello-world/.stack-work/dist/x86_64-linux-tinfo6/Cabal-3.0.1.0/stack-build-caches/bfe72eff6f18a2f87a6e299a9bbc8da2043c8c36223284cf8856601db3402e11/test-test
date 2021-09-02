@@ -1,0 +1,14 @@
+/home/lucasjoviniano/Documents/exercism/haskell/hello-world/test/Tests.hs:
+  hash: 095505a4470e04c008495031e919c00d1921b456a818bb78471bca6b7d51d6d7
+/home/lucasjoviniano/.stack/programs/x86_64-linux/ghc-tinfo6-8.8.4/lib/ghc-8.8.4/include/ghcversion.h:
+  hash: 297e8571427d670d413977834f5cdfc77cb89051d2f5b8302303c442346d15d0
+/home/lucasjoviniano/Documents/exercism/haskell/hello-world/hello-world.cabal:
+  hash: 6173ea839260876e5ad88713461d795bc2f56fad45cbd2e9ac09d07b65ef9c69
+? /home/lucasjoviniano/Documents/exercism/haskell/hello-world/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.0.1.0/build/test/autogen/cabal_macros.h
+: hash: e19012b4926b2c815d809adb91515a66bef1e396b6d8357554bf06591b8d219a
+/usr/include/stdc-predef.h:
+  hash: 38bac01c137da3ec6623c5166d420cd0bdee18e1d6605921f138f74ef902f102
+? /home/lucasjoviniano/Documents/exercism/haskell/hello-world/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.0.1.0/build/test/autogen/Paths_hello_world.hs
+: hash: 016e42d2f9b45a2332138eb2b4afbf360492272a89c3be1137fae50ed2a95357
+/home/lucasjoviniano/Documents/exercism/haskell/hello-world/package.yaml:
+  hash: 160a1a88b7a5bd0f6f1ffd3e24f56cbba5e4d4fbd7f76ea73d649199ca9d76a5

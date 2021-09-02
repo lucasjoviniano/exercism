@@ -1,0 +1,14 @@
+/home/lucasjoviniano/.stack/programs/x86_64-linux/ghc-tinfo6-8.8.4/lib/ghc-8.8.4/include/ghcversion.h:
+  hash: 297e8571427d670d413977834f5cdfc77cb89051d2f5b8302303c442346d15d0
+/home/lucasjoviniano/Documents/exercism/haskell/bob/bob.cabal:
+  hash: d7d7ff90097770f4eafa2981202b4df55f21df09d56f8709c9bc4209af3c64fc
+? /home/lucasjoviniano/Documents/exercism/haskell/bob/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.0.1.0/build/test/autogen/Paths_bob.hs
+: hash: 2bc50040335a616046804194d80829c07b66c3c238cc9f9e15ca9820ba263288
+/home/lucasjoviniano/Documents/exercism/haskell/bob/package.yaml:
+  hash: fdbe34943408486a1bea988085ad4b25d582690cac37d8a14acf12386796af4d
+/usr/include/stdc-predef.h:
+  hash: 38bac01c137da3ec6623c5166d420cd0bdee18e1d6605921f138f74ef902f102
+/home/lucasjoviniano/Documents/exercism/haskell/bob/test/Tests.hs:
+  hash: fdd02bf28bfa2b85826a49359bf42facf7874c2de37e7ce7c8f6c4ac6e9427f6
+? /home/lucasjoviniano/Documents/exercism/haskell/bob/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.0.1.0/build/test/autogen/cabal_macros.h
+: hash: 0b66d415b2a791cdf49726e907329b587f0d95265a9acc7709e7eec639c95f93

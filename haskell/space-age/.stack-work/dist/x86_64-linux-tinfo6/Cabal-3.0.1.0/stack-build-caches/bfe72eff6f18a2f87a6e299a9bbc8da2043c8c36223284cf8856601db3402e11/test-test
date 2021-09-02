@@ -1,0 +1,14 @@
+/home/lucasjoviniano/Documents/exercism/haskell/space-age/package.yaml:
+  hash: d8dbdf4247d1f13fc1acdd3b68d702ceb46403e97b81ac10decfe16dc11cdfee
+/home/lucasjoviniano/.stack/programs/x86_64-linux/ghc-tinfo6-8.8.4/lib/ghc-8.8.4/include/ghcversion.h:
+  hash: 297e8571427d670d413977834f5cdfc77cb89051d2f5b8302303c442346d15d0
+/home/lucasjoviniano/Documents/exercism/haskell/space-age/space-age.cabal:
+  hash: 1516eb0c04b341a0bf1a71d9908a89846aa57c8f65495dd78d9d7d102af763cc
+/home/lucasjoviniano/Documents/exercism/haskell/space-age/test/Tests.hs:
+  hash: 7f0a1695fc5c40b14a8d7aab6edca28d3dfb066fcd134605b270b218514f7d1a
+? /home/lucasjoviniano/Documents/exercism/haskell/space-age/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.0.1.0/build/test/autogen/cabal_macros.h
+: hash: ec47d1d0d7ff45bac9a91972ff999686f8c5030131db3d0ca78a7c563699b7ed
+/usr/include/stdc-predef.h:
+  hash: 38bac01c137da3ec6623c5166d420cd0bdee18e1d6605921f138f74ef902f102
+? /home/lucasjoviniano/Documents/exercism/haskell/space-age/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.0.1.0/build/test/autogen/Paths_space_age.hs
+: hash: c074bb8555b819a1a90423297f3666862b72a5aa3e137b47c8171f58bd435861
