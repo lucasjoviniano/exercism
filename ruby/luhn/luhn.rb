@@ -1,11 +1,43 @@
 class Luhn
-  def self.valid?(input)
-    digits = input.scan(/\d/).map(&:to_i)
-    return false if input.gsub(/[^\d\s]/).to_a.size.positive? || digits.size <= 1
+  def self.valid?(id_number)
+    new(id_number).valid?
+  end
 
-    soma = digits.map.with_index { |num, index| index.even? == digits.length.even? ? num * 2 : num }
-                 .map { |num| num > 9 ? num - 9 : num }
-                 .sum
-    (soma % 10).zero?
+  private
+
+  attr_reader :number
+
+  def initialize(id_number)
+    @number = prepare(id_number)
+  end
+
+  def prepare(id_number)
+    id_number.delete(' ').chars.map do |char|
+      Integer(char)
+    end
+  rescue ArgumentError
+    []
+  end
+
+  def long_enough?
+    number.size > 1
+  end
+
+  def double_second_digits
+    number.map(&:to_i)
+          .reverse
+          .each_slice(2)
+          .sum { |a, b = 0| a + double_and_cap(b) }
+  end
+
+  def double_and_cap(digit)
+    doubled = digit * 2
+    doubled <= 9 && doubled || doubled - 9
+  end
+
+  public
+
+  def valid?
+    long_enough? && (double_second_digits % 10).zero?
   end
 end

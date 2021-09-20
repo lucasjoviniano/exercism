@@ -4,19 +4,21 @@ require_relative 'luhn'
 # Common test data version: 1.4.0 4a80663
 class LuhnTest < Minitest::Test
   def test_single_digit_strings_can_not_be_valid
-  
     refute Luhn.valid?("1")
   end
 
   def test_a_single_zero_is_invalid
+
     refute Luhn.valid?("0")
   end
 
   def test_a_simple_valid_sin_that_remains_valid_if_reversed
+
     assert Luhn.valid?("059")
   end
 
   def test_a_simple_valid_sin_that_becomes_invalid_if_reversed
+
     assert Luhn.valid?("59")
   end
 
