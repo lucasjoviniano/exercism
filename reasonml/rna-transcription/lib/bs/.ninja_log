@@ -1,0 +1,14 @@
+# ninja log v5
+# start_time end_time mtime command hash
+4	29	1658785897830940057	RnaTranscription.cmi	c94fd53383f347d0
+3	727	1658785898530940073	src/RnaTranscription.reiast	472509a21ed941ad
+0	728	1658785898530940073	__tests__/RnaTranscription_test.reast	829770d617230451
+0	7	1658785917310940512	__tests__/RnaTranscription_test.d	1c82a055f6eb9ef9
+1	37	1658785917340940512	src/RnaTranscription.reast	52cbaf0d34dc8e0f
+37	42	1658785917350940513	src/RnaTranscription.d	aafe590da28df2fd
+42	64	1658785917360940513	src/RnaTranscription-RnaTranscription.cmi	e1ca406714776e85
+64	83	1658785917390940514	src/RnaTranscription-RnaTranscription.cmj	cedc1af801c3f97
+64	83	1658785917390940514	/home/lucas/dev/exercism/reasonml/rna-transcription/src/RnaTranscription.bs.js	cedc1af801c3f97
+83	100	1658785917400940514	__tests__/RnaTranscription_test-RnaTranscription.cmj	564c3426cbfe4630
+83	100	1658785917400940514	__tests__/RnaTranscription_test-RnaTranscription.cmi	564c3426cbfe4630
+83	100	1658785917400940514	/home/lucas/dev/exercism/reasonml/rna-transcription/__tests__/RnaTranscription_test.bs.js	564c3426cbfe4630

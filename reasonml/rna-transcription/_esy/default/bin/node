@@ -1,0 +1,4 @@
+#!/bin/sh
+export ESY__NODE_BIN_PATH="/home/lucas/dev/exercism/reasonml/rna-transcription/_esy/default/bin"
+exec "/home/lucas/.nvm/versions/node/v18.6.0/bin/node" -r "/home/lucas/dev/exercism/reasonml/rna-transcription/_esy/default/pnp.js" "$@"
+              

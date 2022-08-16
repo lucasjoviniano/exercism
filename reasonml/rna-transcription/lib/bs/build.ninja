@@ -1,0 +1,52 @@
+g_pkg_flg = -bs-package-name rna-transcription -bs-ns RnaTranscription
+src_root_dir = /home/lucas/dev/exercism/reasonml/rna-transcription
+bsc = /home/lucas/dev/exercism/reasonml/rna-transcription/node_modules/bs-platform/linux/bsc.exe
+bsdep = /home/lucas/dev/exercism/reasonml/rna-transcription/node_modules/bs-platform/linux/bsb_helper.exe
+warnings =  -warn-error +101
+bsc_flags = 
+ppx_flags = 
+g_dpkg_incls = -I /home/lucas/dev/exercism/reasonml/rna-transcription/node_modules/@glennsl/bs-jest/lib/ocaml
+g_ns = -bs-ns RnaTranscription
+bsb_dir_group = 0
+bsc_group_1_includes = -I __tests__
+g_lib_incls = -I . -I src
+rule build_ast_from_re
+  command = $bsc  $warnings -color always $bsc_flags -o $out -bs-syntax-only -bs-binary-ast $in
+  description = [34mBuilding[39m [2m${out}[22m
+build  __tests__/RnaTranscription_test.reast : build_ast_from_re $src_root_dir/__tests__/RnaTranscription_test.re
+rule build_deps
+  command = $bsdep -hash ca640a00e2c7cd152efd847320adc4d5 $g_ns -g $bsb_dir_group $in
+  restat = 1
+  description = [34mBuilding[39m [2m${out}[22m
+build  __tests__/RnaTranscription_test.d : build_deps __tests__/RnaTranscription_test.reast
+  bsb_dir_group = 1
+rule ml_cmj_cmi_dev
+  command = $bsc $g_pkg_flg -color always -bs-suffix $g_dev_incls $g_lib_incls $g_dpkg_incls $warnings $bsc_flags -o $out $in
+  dyndep = $in_e.d
+  restat = 1
+  description = [34mBuilding[39m [2m${out}[22m
+build  __tests__/RnaTranscription_test-RnaTranscription.cmj |  __tests__/RnaTranscription_test-RnaTranscription.cmi $src_root_dir/__tests__/RnaTranscription_test.bs.js : ml_cmj_cmi_dev __tests__/RnaTranscription_test.reast ||  __tests__/RnaTranscription_test.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output commonjs:__tests__
+  g_dev_incls = $bsc_group_1_includes
+build  src/RnaTranscription.reast : build_ast_from_re $src_root_dir/src/RnaTranscription.re
+build  src/RnaTranscription.d : build_deps src/RnaTranscription.reast src/RnaTranscription.reiast
+build  src/RnaTranscription.reiast : build_ast_from_re $src_root_dir/src/RnaTranscription.rei
+rule ml_cmi
+  command = $bsc $g_pkg_flg -color always -bs-suffix $g_lib_incls $warnings $bsc_flags -o $out $in
+  dyndep = $in_e.d
+  restat = 1
+  description = [34mBuilding[39m [2m${out}[22m
+build  src/RnaTranscription-RnaTranscription.cmi : ml_cmi src/RnaTranscription.reiast ||  src/RnaTranscription.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output commonjs:src
+rule ml_cmj_only
+  command = $bsc $g_pkg_flg -color always -bs-suffix -bs-read-cmi $g_lib_incls $warnings $bsc_flags -o $out $in
+  dyndep = $in_e.d
+  restat = 1
+  description = [34mBuilding[39m [2m${out}[22m
+build  src/RnaTranscription-RnaTranscription.cmj |  $src_root_dir/src/RnaTranscription.bs.js : ml_cmj_only src/RnaTranscription.reast |  src/RnaTranscription-RnaTranscription.cmi ||  src/RnaTranscription.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output commonjs:src
+rule build_package
+  command = $bsc -w -49 -color always -no-alias-deps  $in
+  restat = 1
+  description = [34mBuilding[39m [2m${out}[22m
+build  RnaTranscription.cmi : build_package RnaTranscription.mlmap

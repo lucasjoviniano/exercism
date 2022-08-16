@@ -1,0 +1,14 @@
+####{BSB GENERATED: NO EDIT
+B lib/bs
+FLG -open Leap
+FLG -ppx '/home/lucas/dev/exercism/reasonml/leap/node_modules/bs-platform/linux/bsc.exe -as-ppx '
+S /home/lucas/dev/exercism/reasonml/leap/node_modules/bs-platform/lib/ocaml
+B /home/lucas/dev/exercism/reasonml/leap/node_modules/bs-platform/lib/ocaml
+FLG -w +a-4-9-20-40-41-42-50-61-102
+S /home/lucas/dev/exercism/reasonml/leap/node_modules/@glennsl/bs-jest/lib/ocaml
+B /home/lucas/dev/exercism/reasonml/leap/node_modules/@glennsl/bs-jest/lib/ocaml
+S __tests__
+B lib/bs/__tests__
+S src
+B lib/bs/src
+####BSB GENERATED: NO EDIT}

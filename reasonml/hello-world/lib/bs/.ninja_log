@@ -1,0 +1,18 @@
+# ninja log v5
+# start_time end_time mtime command hash
+2	11	1658780317973994157	HelloWorld.cmi	6778d497aff5c6b2
+1	197	1658780318153994161	src/HelloWorld.reiast	7d26b5880fd916bf
+0	198	1658780318153994161	src/HelloWorld.reast	1581e50351ffd855
+0	199	1658780318153994161	__tests__/HelloWorld_test.reast	f754fc2dd1790f11
+198	200	1658780318163994162	src/HelloWorld.d	b3fc6abb100204b8
+199	203	1658780318163994162	__tests__/HelloWorld_test.d	1bca68fa96b2fb45
+200	205	1658780318163994162	src/HelloWorld-HelloWorld.cmi	8ecf216ac33ee987
+205	210	1658780318173994162	src/HelloWorld-HelloWorld.cmj	9aa46c455cc0b5be
+205	210	1658780318173994162	/home/lucas/dev/exercism/reasonml/hello-world/src/HelloWorld.bs.js	9aa46c455cc0b5be
+210	219	1658780318173994162	__tests__/HelloWorld_test-HelloWorld.cmj	c46a65be36feb455
+210	219	1658780318173994162	__tests__/HelloWorld_test-HelloWorld.cmi	c46a65be36feb455
+210	219	1658780318173994162	/home/lucas/dev/exercism/reasonml/hello-world/__tests__/HelloWorld_test.bs.js	c46a65be36feb455
+0	17	1658780347923994857	src/HelloWorld.reast	1581e50351ffd855
+17	20	1658780347923994857	src/HelloWorld.d	b3fc6abb100204b8
+20	29	1658780347923994857	src/HelloWorld-HelloWorld.cmj	9aa46c455cc0b5be
+20	29	1658780347923994857	/home/lucas/dev/exercism/reasonml/hello-world/src/HelloWorld.bs.js	9aa46c455cc0b5be

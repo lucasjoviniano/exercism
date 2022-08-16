@@ -1,0 +1,1 @@
+__tests__/RnaTranscription_test-RnaTranscription.cmj : RnaTranscription.cmi src/RnaTranscription-RnaTranscription.cmj src/RnaTranscription-RnaTranscription.cmi
