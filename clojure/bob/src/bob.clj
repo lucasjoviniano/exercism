@@ -1,13 +1,17 @@
 (ns bob
   (:require [clojure.string :as str]))
 
-(defn yelling? [s] (and (= (str/lower-case s) s) (= (str/upper-case s) s)))
+(defn question? [s]
+  (str/ends-with? s "?"))
 
-(defn question? [s] (str/ends-with? s "?"))
+(defn yelling? [s]
+  (and (re-seq #"[a-zA-Z]" s) (= (str/upper-case s) s)))
 
-(defn response-for [s] (let [message (str/trim s)] (cond
-                                                         (and (yelling? message) (question? message)) "Calm down, I know what I'm doing!"
-                                                         (yelling? message) "Whoa, chill out!"
-                                                         (question? message) "Sure."
-                                                         (str/blank? message) "Fine. Be that way!"
-                                                         :else "Whatever.")))
+(defn response-for [s] ;; <- arglist goes here
+  (let [s (str/trim s)]
+    (cond
+          (and (question? s) (yelling? s)) "Calm down, I know what I'm doing!"
+          (question? s) "Sure."
+          (yelling? s) "Whoa, chill out!"
+          (str/blank? s) "Fine. Be that way!"
+          :else "Whatever.")))
